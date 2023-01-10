@@ -1,0 +1,103 @@
+
+
+
+
+<div class="container " style="margin-top: 100px;">
+    <div class="col-lg-12 bg-white " >
+
+        <div class="row m-0">
+            <div class="col-lg-8 left-side-product-box pb-3">
+                <img [src]="allProducts.img1" class="p-2">
+                <img [src]="allProducts.img2" class=" p-2" alt="">
+                <span class="sub-img">
+                    <img [src]="allProducts.img3" class=" p-2">
+                    <img [src]="allProducts.img4" class=" p-2">
+                </span>
+            </div>
+            <div class="col-lg-4">
+                <div class="right-side-pro-detail  p-3 m-0">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p class="m-0 p-0">{{allProducts.title}}</p>
+                            <span>{{allProducts.type}}</span><br><br>
+
+                            <span>MRP : ₹ {{allProducts.price}}</span><br>
+                            <span class="hd">incl. of taxes</span><br>
+                            <span class="hd">(Also includes all applicable duties)</span>
+
+                        </div>
+                        <div class="col-lg-12 mt-5 ">
+                            <button (click)="addToCart(allProducts)"  type="button" class="btn btn-dark w-100 " style="border-radius:70px; height: 60px; font-size: large;">Add to bag</button><br>
+                            <button (click)="addToWishList(allProducts)" type="button" class="btn btn-light w-100 h-70 mt-3" style="border-radius:70px; height: 60px; border-color: rgb(184, 181, 181); font-size: large;">Favourite <i class="fa fa-heart"></i></button>
+                        </div>
+                        <div class="col-lg-12 pt-2 mt-5">
+                            <span>{{allProducts.description}}</span>
+                        </div>
+                        <div class="col-lg-12 mt-3">
+
+                        <ul>
+                        <li> <span>Colour Shown : {{allProducts.ColourShown}} </span></li>
+                        <li> <span>Style: {{allProducts.Style}}</span></li>
+
+                        </ul>  
+                        </div>
+                        <hr>
+                        <div class="col-lg-12 ">
+                            <p>
+                                <a class="btn btn-transparent w-100 fs-5 d-flex" style="border: none;" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                  Size & Fit 
+                                </a>
+                              </p>
+                              <div class="collapse" id="collapseExample">
+                                <div class="card card-body " style="border: none;">
+                                  <li class="fs-5">Size Guide</li>
+                                </div>
+                              </div>
+
+
+                        </div>
+                        <hr>
+                        <div class="col-lg-12 ">
+                            <p>
+                                <a class="btn btn-transparent w-100 fs-5 d-flex" style="border: none;" data-bs-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    Delivery & Returns
+                                </a>
+                              </p>
+                              <div class="collapse" id="collapseExample1">
+                                <div class="card card-body " style="border: none;">
+                                    <span>All purchases are subjected to delivery fees.</span><br>
+                                  <li class="fs-6">Standard delivery 4–9 Working Days</li> <br>
+                                  <span>Orders are processed and delivered Monday–Friday (excluding public holidays).
+                                    <br><br>
+
+                                    Nike Members enjoy free returns.</span>
+                                </div>
+                              </div>
+
+                        </div>
+                        <hr>
+
+                        <div class="col-lg-12 ">
+                            <p>
+                                <a class="btn btn-transparent w-100 fs-5 d-flex" style="border: none;" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                   Product Information
+                                </a>
+                              </p>
+                              <div class="collapse" id="collapseExample2">
+                                <div class="card card-body " style="border: none;">
+                                    <span>Declaration of Importer: Direct import by the individual customer</span><br>
+                                  <span>Marketed by: Nike Global Trading B.V. Singapore Branch, 30 Pasir Panjang Road, #10-31/32, Mapletree Business City, Singapore 117 440
+                                    <br><br>
+
+                                    Net Quantity: 1 Pair</span>
+                                </div>
+                              </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
